@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="593dfc38-0920-43fa-9413-fd99e72153cf" name="Changes" comment="" />
+    <list default="true" id="593dfc38-0920-43fa-9413-fd99e72153cf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mitocode/controller/TransaccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mitocode/controller/TransaccionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mitocode/dto/PostTransaccionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mitocode/dto/PostTransaccionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mitocode/dto/TransaccionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mitocode/dto/TransaccionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mitocode/model/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mitocode/model/Transaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mitocode/controller/TransaccionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mitocode/controller/TransaccionController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +67,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "6a08e0ef9adaf4f86ed25e24646484ae",
+    "spring.configuration.checksum": "f4e3c651a73a6a713b706d76137b127e",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,7 +103,8 @@
       <updated>1701997370003</updated>
       <workItem from="1701997409419" duration="19926000" />
       <workItem from="1702046532135" duration="9032000" />
-      <workItem from="1702056349729" duration="467000" />
+      <workItem from="1702056349729" duration="1474000" />
+      <workItem from="1702062344487" duration="4646000" />
     </task>
     <servers />
   </component>

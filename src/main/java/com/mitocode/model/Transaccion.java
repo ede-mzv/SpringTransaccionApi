@@ -26,11 +26,11 @@ public class Transaccion {
     @Column(name = "ID_Vehiculo")
     private Integer idVehiculo;
 
-    @Column(name = "Fecha_Transaccion")
-    private Timestamp fechaTransaccion;
+    @Column(name = "Dias_Reserva")
+    private Integer diasReserva;
 
-    @Column(name = "Monto")
-    private BigDecimal monto;
+    @Column(name = "Direccion_Entrega")
+    private String direccionEntrega;
 
     @Column(name = "Transaccion_Realizada")
     private boolean transaccionRealizada;

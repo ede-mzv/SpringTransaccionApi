@@ -49,14 +49,21 @@ public class TransaccionController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
     */
-    @PostMapping("/NuevaTransaccion")
-    public ResponseEntity<Void> createTransaccion(@RequestBody PostTransaccionDTO dto) {
-        Transaccion transaccion = mapper.map(dto, Transaccion.class);
+    @PostMapping("/Reserva")
+    public ResponseEntity<String> createTransaccion(@RequestBody PostTransaccionDTO dto) {
+        if (dto.getClienteId() == null) {
+            // Retorna un error o maneja el caso donde clienteId es null
+            return ResponseEntity.badRequest().body("Cliente ID is null");
+        }
 
         Clientes cliente = clientesRepository.findById(dto.getClienteId()).orElse(null);
-        transaccion.setClientes(cliente);
+        if (cliente == null) {
+            // Retorna un error o maneja el caso donde el cliente no se encuentra
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Cliente no encontrado");
+        }
 
-        // Asegúrate de establecer el valor por defecto para transaccionRealizada aquí
+        Transaccion transaccion = mapper.map(dto, Transaccion.class);
+        transaccion.setClientes(cliente);
         transaccion.setTransaccionRealizada(false);
         transaccionRepository.save(transaccion);
         return ResponseEntity.status(HttpStatus.CREATED).build();

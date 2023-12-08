@@ -14,17 +14,15 @@ public class TransaccionDTO {
     @EqualsAndHashCode.Include
     private Integer id;
 
-
+    @NotNull
     private ClientesDTO cliente;
 
 
     private Integer idVehiculo;
 
-    @NotNull
-    private Timestamp fechaTransaccion;
+    private Integer diasReserva;
 
-    @NotNull
-    private BigDecimal monto;
+    private String direccionEntrega;
 
     private boolean transaccionRealizada;
 

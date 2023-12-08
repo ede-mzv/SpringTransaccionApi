@@ -16,14 +16,18 @@ public class PostTransaccionDTO {
     @EqualsAndHashCode.Include
     private Integer id;
 
+
     @NotNull
     private Integer clienteId;
 
 
-    @NotNull
-    private Timestamp fechaTransaccion;
+    private Integer idVehiculo;
 
-    @NotNull
-    private BigDecimal monto;
+    private Integer diasReserva;
+
+    private String direccionEntrega;
+
+    private boolean transaccionRealizada;
+
 
 }
